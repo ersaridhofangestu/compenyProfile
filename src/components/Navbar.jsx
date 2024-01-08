@@ -25,9 +25,9 @@ const Navbar = () => {
            absolute top-0 right-0 bottom-0 flex flex-col w-[100%] bg-slate-950 h-screen pt-[25vh] text-[28px] gap-16 items-center xl:relative xl:flex-row xl:w-auto xl:bg-none xl:pt-0 xl:left-0 xl:text-base xl:duration-0 xl:h-auto transition-all duration-300 order-2`}
         >
           <Link to="/">HOME</Link>
-          <Link to="/">PRICING</Link>
-          <Link to="/">FAQ</Link>
-          <Link to="/">CONTACT</Link>
+          <Link to="/pricing">PRICING</Link>
+          <Link to="/faq">FAQ</Link>
+          <Link to="/contact">CONTACT</Link>
         </div>
         <div onClick={handleToggle} className="xl:hidden z-50">
           {toggle ? <FaXmark size={50} /> : <IoMenu size={50} />}

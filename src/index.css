@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-img {
+  background: linear-gradient(
+      to right,
+      rgba(78, 5, 250, 0.5),
+      rgba(201, 7, 245, 0.5)
+    ),
+    url("./assets/backgroundTestimonial.webp");
+  background-size: cover;
+  width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+  .bg-img {
+    background: linear-gradient(
+        to right,
+        rgba(78, 5, 250, 0.5),
+        rgba(201, 7, 245, 0.5)
+      ),
+      url("./assets/backgroundTestimonial.webp");
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+  }
+}

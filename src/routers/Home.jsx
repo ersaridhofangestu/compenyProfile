@@ -1,11 +1,17 @@
 import React from "react";
 import Hero from "../components/Hero";
+import Price from "../components/Price";
+import Quots from "../components/Quots";
+import Contacts from "./Contacts";
 
 const Home = () => {
   return (
-    <div className="h-[1000vh]">
+    <>
       <Hero />
-    </div>
+      <Price />
+      <Quots />
+      <Contacts />
+    </>
   );
 };
 
